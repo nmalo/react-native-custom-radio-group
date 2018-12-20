@@ -11,7 +11,7 @@ Example uses default styles by RadioGroup<br><br>
 npm install react-native-custom-radio-group --save
 ```
 <strong>Props</strong>:<br>
-* radioGroupList (<i>Required</i>) : An array of object; object => {label: '', value: ''}
+* radioGroupList (<i>Required</i>) : An array of object; object => {label: '', value: '', accessibilityLabel: ''}
 * onChange: CallBack with the value of selected radio button
 * initialValue: Value of the option to be initially selected
 * containerStyle: Style of the radio group container
@@ -45,12 +45,15 @@ export default class MyComponent extends Component {
 //radioGroupList.js
 export const radioGroupList = [{
   label: 'Car',
-  value: 'transport_car'
+  value: 'transport_car',
+  accessibilityLabel: 'Car'
 }, {
   label: 'Bike',
-  value: 'transport_bike'
+  value: 'transport_bike',
+  accessibilityLabel: 'Bike'
 }, {
   label: 'Bus',
-  value: 'transport_bus'
+  value: 'transport_bus',
+  accessibilityLabel: 'Bus'
 }];
 ```
